@@ -1,0 +1,43 @@
+{
+  "id": "release-001",
+  "artist_id": "bay-beatz",
+  "title": "Your Release",
+  "artist": "Bay Beatz",
+  "label": "Your Label",
+  "upc": "REPLACE_WITH_ASSIGNED_UPC",
+  "release_date": "2026-12-01",
+  "genre": "Hip-Hop",
+  "copyright_line": "2026 Your Rights Holder",
+  "phonographic_copyright_line": "2026 Your Rights Holder",
+  "rights_confirmed": false,
+  "territories": [
+    "Worldwide"
+  ],
+  "destinations": [
+    "spotify",
+    "apple_music",
+    "amazon_music",
+    "youtube_music",
+    "tidal",
+    "deezer"
+  ],
+  "artwork": "cover.jpg",
+  "tracks": [
+    {
+      "id": "track-001",
+      "title": "Your Track",
+      "artist": "Bay Beatz",
+      "isrc": "REPLACE_WITH_ASSIGNED_ISRC",
+      "explicit": false,
+      "instrumental": true,
+      "language": "zxx",
+      "credits": [
+        {
+          "name": "Your Composer Name",
+          "role": "composer"
+        }
+      ],
+      "master": "master.wav"
+    }
+  ]
+}

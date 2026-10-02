@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/azure-functions/python:4-python3.12
+RUN apt-get update && apt-get install -y --no-install-recommends ffmpeg && rm -rf /var/lib/apt/lists/*
+ENV AzureWebJobsScriptRoot=/home/site/wwwroot AzureFunctionsJobHost__Logging__Console__IsEnabled=true
+COPY requirements-lock.txt /tmp/requirements-lock.txt
+RUN pip install --no-cache-dir -r /tmp/requirements-lock.txt
+COPY function_app.py host.json /home/site/wwwroot/
+COPY musicdist /home/site/wwwroot/musicdist
